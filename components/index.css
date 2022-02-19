@@ -3,3 +3,19 @@
 body{
     background-color: var(--light);
 }
+.material-icons{
+    font-size: 1.5rem;
+}
+
+.menu-icons{
+width: 15rem;
+}
+.logo{
+    padding: 0 3rem;
+    font-size: 1.5rem;
+}
+.search{
+    border: none;
+    background-color: var(--white);
+
+}
