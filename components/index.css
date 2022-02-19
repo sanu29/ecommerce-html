@@ -1,0 +1,5 @@
+@import url("https://instantui-cl.netlify.app/component.css");
+
+body{
+    background-color: var(--light);
+}
