@@ -22,9 +22,9 @@
 <h1>Screens</h1>
 # Auth
 
-![image](https://user-images.githubusercontent.com/51195476/154929252-f5201188-4ae4-4836-adac-b70789a3ebe6.png)
+![image](https://user-images.githubusercontent.com/51195476/154990907-31b8e19b-42cd-4c7c-9a17-192fc0cde46d.png)
+![image](https://user-images.githubusercontent.com/51195476/154990992-2a874502-4ce0-406d-a8a7-40e7c1366476.png)
 
-![image](https://user-images.githubusercontent.com/51195476/154929270-8b1815f2-fe09-4b77-8395-c5ddf762118b.png)
 
 # Homepage
 ![image](https://user-images.githubusercontent.com/51195476/154929029-5637acbd-a356-48ee-a4eb-01e3c1f9d23e.png)
