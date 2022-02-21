@@ -1,21 +1,24 @@
-.card{
+.card {
     width: 15rem !important;
     max-width: 20rem;
     min-width: fit-content;
     margin: 0.5rem !important;
 }
-.header-static{
+
+.header-static {
     grid-area: header;
     background-color: var(--primary-color);
     position: fixed;
     top: 0;
     z-index: 999;
 }
-.footer{
+
+.footer {
     grid-area: footer;
 }
-.main{
+
+.main {
     grid-area: main;
-    margin: 6rem 3rem ;
+    margin: 6rem 3rem;
     min-height: 100vh;
 }
