@@ -16,6 +16,7 @@
   <li>Landing Page</li>
   <li>Cart</li>
   <li>whish list</li>
+  <li>Product Page</li>
 </ol>
   
 <h1>Screens</h1>
