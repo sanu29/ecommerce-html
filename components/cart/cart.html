@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href='https://instantui-cl.netlify.app/component.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href='./cart.css'>
+
+
+    <link rel="stylesheet" href='../index.css'>
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div
+            class="header-simple header-static bg-primary d-flex-row border-radius-none padding-none margin-none justify-content-between">
+
+             <a href="../../index.html" class="logo">Instant-Grocery</a>
+            <div
+                class="d-flex align-items-center text-primary border-color-gray border-radius-sm overflow-hidden search">
+                <input type="text" class="input-sm box-shadow-none margin-none search" placeholder="Seacrh...">
+                <div class="material-icons align-self-center bg-white padding-4 text-color-primary">search</div>
+            </div>
+
+
+            <div class="d-flex-row menu-icons justify-content-around">
+                <a href="../login/login.html" class="align-self-center heading-3 btn">Logout</a>
+                <a href="../cart/cart.html" class="heading-3 margin-8 material-icons header-icon">shopping_cart</a>
+                <a href="../wishlist/wishlist.html" class="heading-3 margin-8 material-icons header-icon">favorite</a>
+            </div>
+        </div>
+
+        <div class="main">
+
+            <div class="d-flex">
+
+
+                <div class="comodities d-flex-column justify-content-between align-items-center flex-wrap">
+
+                    <div class="card border-radius-sm  d-flex-row ">
+                        <div class="position-relative d-flex justify-content-center align-items-center">
+                            <img class="card-img border-radius-sm" src="../../assets/images/prod16.jpg" alt="food">
+
+
+                        </div>
+                        <div class="d-flex-column card-main">
+                            <div class="card-primary">
+                                <div class="text-align-center  para4 font-weight-bolder">Strawbery</div>
+                                <h2 class="para3 font-weight-bolder margin-24">₹ 100/250gm </h2>
+                                <h2 class=" para4 d-flex justify-content-between align-items-center">
+                                    <div class="margin-16">Quantity </div>
+
+                                    <div
+                                        class="d-flex-row justify-content-center align-items-center border-1 border-color-gray padding-none">
+
+                                        <button class="quantity-btn "> + </button>
+                                        <input type="text" value="1" class="quantity-input">
+                                        <button class="quantity-btn "> - </button>
+
+                                    </div>
+                                </h2>
+
+                            </div>
+                            <div class="card-action">
+                                <div
+                                    class="btn border-radius-sm bg-gray font-color-white w-100 text-align-center margin-none margin-top ">
+                                    Add to Wishlist</div>
+                                <div class="btn margin-none border-radius-sm w-100 text-align-center ">Remove from cart
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card border-radius-sm  d-flex-row ">
+                        <div class="position-relative d-flex justify-content-center align-items-center">
+                            <img class="card-img border-radius-sm" src="../../assets/images/prod5.jpg" alt="food">
+
+
+                        </div>
+                        <div class="d-flex-column card-main">
+                            <div class="card-primary">
+                                <div class="text-align-center  para4 font-weight-bolder">Spinach</div>
+                                <h2 class="para3 font-weight-bolder margin-24">₹ 25/500gm </h2>
+                                <h2 class=" para4 d-flex justify-content-between align-items-center">
+                                    <div class="margin-16">Quantity </div>
+                                    <div
+                                        class="d-flex-row justify-content-center align-items-center border-1 border-color-gray padding-none">
+
+                                        <button class="quantity-btn "> + </button>
+                                        <input type="text" value="2" class="quantity-input">
+                                        <button class="quantity-btn "> - </button>
+
+                                    </div>
+                                </h2>
+
+                            </div>
+                            <div class="card-action">
+                                <div
+                                    class="btn border-radius-sm bg-gray font-color-white w-100 text-align-center margin-none margin-top ">
+                                    Add to Wishlist</div>
+                                <div class="btn margin-none border-radius-sm w-100 text-align-center ">Remove from cart
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="card border-radius-sm   d-flex-row ">
+
+                    <div class="d-flex-column card-main">
+                        <div class="card-primary">
+                            <div class="text-align-center  para3 font-weight-bolder">Price Details</div>
+                            <hr class="divider">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>Item</div>
+
+                                <div>Price</div>
+
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center margin-top">
+                                <div>Strawberry(1 item) </div>
+                                <div><span class="text-muted">₹</span>100</div>
+
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center  margin-top">
+                                <div>Spinach (2 items) </div>
+                                <div><span class="text-muted">₹</span>50</div>
+
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center  margin-top">
+                                <div>Discount </div>
+                                <div>- <span class="text-muted">₹</span>20</div>
+
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center  margin-top">
+                                <div>Delivery Charges</div>
+                                <div><span class="text-muted">₹</span>50</div>
+
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center  margin-top">
+                                <div>Total Amount</div>
+                                <div><span class="text-muted">₹</span>180</div>
+
+                            </div>
+                            <hr class="divider">
+                            You Will Save Rs 20 on this Order
+
+                            <div class="card-action">
+                                <div
+                                    class="btn border-radius-sm btn-primary w-100 text-align-center margin-none margin-top ">
+                                    Place Order</div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <footer class="footer margin-top d-flex justify-content-around  align-items-center ">
+                <div class="d-flex-column">
+                    <div class="text-primary font-weight-bolder para3 padding-4">Info</div>
+                    <div class="text-primary para4 padding-4">Our Story</div>
+                    <div class="text-primary  para4 padding-4">Farmers Story</div>
+                    <div class="text-primary  para4 padding-4">Blogs</div>
+
+                </div>
+                <div class="d-flex-column">
+                    <div class="text-primary font-weight-bolder para3 padding-4">Support</div>
+                    <div class="text-primary para4 padding-4">FAQ</div>
+                    <div class="text-primary  para4 padding-4">Complaint</div>
+                    <div class="text-primary  para4 padding-4">Refund and Return Policy</div>
+                </div>
+                <div class="d-flex-column">
+                    <div class="d-flex-column">
+                        <div class="text-primary font-weight-bolder para3 padding-4">Socials</div>
+                        <div class="text-primary para4 padding-4">Twitter</div>
+                        <div class="text-primary  para4 padding-4">Facebook</div>
+                        <div class="text-primary  para4 padding-4">Instagram</div>
+                    </div>
+            </footer>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,321 +9,343 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href='./product.css'>
 
-  
+
     <link rel="stylesheet" href='../index.css'>
     <title>Product</title>
 </head>
+
 <body>
     <div class="container">
-    <div class="header-simple header-static bg-primary d-flex-row border-radius-none padding-none margin-none justify-content-between">
-      
-        <div class="logo">Instant-Grocery</div>
-    <div class="d-flex align-items-center text-primary border-color-gray border-radius-sm overflow-hidden search"> 
-        <input type="text" class="input-sm box-shadow-none margin-none search" placeholder="Seacrh...">
-        <div class="material-icons align-self-center bg-white padding-4 text-color-primary" >search</div>    
+        <div
+            class="header-simple header-static bg-primary d-flex-row border-radius-none padding-none margin-none justify-content-between">
+
+            <a href="../../index.html" class="logo">Instant-Grocery</a>
+            <div
+                class="d-flex align-items-center text-primary border-color-gray border-radius-sm overflow-hidden search">
+                <input type="text" class="input-sm box-shadow-none margin-none search" placeholder="Seacrh...">
+                <div class="material-icons align-self-center bg-white padding-4 text-color-primary">search</div>
+            </div>
+
+
+            <div class="d-flex-row menu-icons justify-content-around">
+                <a href="../login/login.html" class="align-self-center heading-3 btn">Logout</a>
+                <a href="../cart/cart.html" class="heading-3 margin-8 material-icons header-icon">shopping_cart</a>
+                <a href="../wishlist/wishlist.html" class="heading-3 margin-8 material-icons header-icon">favorite</a>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="nav">
+            <div class=" d-flex  text-primary border-color-gray w-100" id="navbar">
+                <ul class="ul-list component-list padding-none w-100">
+                    <li class="margin-8 font-weight-bolder para3">Filter</li>
+                    <li class="margin-8 font-weight-bolder para4">Price</li>
+
+                    <div class="w-100 d-flex justify-content-between align-items-center">
+                        <div>10</div>
+                        <div>200</div>
+                    </div>
+                    <input class="w-100 input range" type="range" min="10" max="500" value="200">
+
+                    <li class="margin-8 font-weight-bolder para4">Category</li>
+                    <li class="margin-8">
+                        <input type="checkbox" name="category" class="input input-checkbox" value="Vegetables"
+                            id="vegetable">
+                        <label for="vegetable">Vegetable</label>
+                    </li>
+                    <li class="margin-8">
+                        <input type="checkbox" name="category" class="input input-checkbox" value="Fruits" id="fruits">
+                        <label for="fruits">Fruits</label>
+                    </li>
+                    <li class="margin-8">
+                        <input type="checkbox" name="category" class="input input-checkbox" value="Snacks" id="snacks">
+                        <label for="snacks">Snacks</label>
+                    </li>
+                    <li class="margin-8 font-weight-bolder para4">Rating</li>
+                    <li>
+                        <input type="radio" name="rating" class="input input-checkbox" value="4" id="four">
+                        <label for="four">4 Starts and Above</label>
+                        <input type="radio" name="rating" class="input input-checkbox" value="3" id="three">
+                        <label for="three">3 Starts and Above</label>
+                        <input type="radio" name="rating" class="input input-checkbox" value="2" id="two">
+                        <label for="two">2 Starts and Above</label>
+                        <input type="radio" name="rating" class="input input-checkbox" value="1" id="one">
+                        <label for="one">1 Starts and Above</label>
+                    </li>
+                    <li class="margin-8 font-weight-bolder para4">Sort By</li>
+                    <li>
+                        <input type="radio" name="category" class="input input-checkbox" value="Snacks" id="snacks">
+                        <label for="snacks">Price - Low to High</label>
+                        <input type="radio" name="category" class="input input-checkbox" value="Snacks" id="snacks">
+                        <label for="snacks">Price - High to Low</label>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+
+
+            <div class="comodities d-flex justify-content-center flex-wrap">
+
+                <div class="card border-radius-sm margin-8 ">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm image-small width-20"
+                            src="../../assets/images/prod16.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Strawbery</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>100/250gm</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod3.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Banana</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>50/Kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod4.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Carrot</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>30/kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod17.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Bringal</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>45/kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod5.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Tea</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>55/kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod6.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Sweet Lime</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>58/kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod14.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Onion</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>20/Kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod20.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Beetroot</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>20/Kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod18.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Doritos</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>30/Packet</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod15.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Dal</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>39/Kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod12.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Apple</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>150/Kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod19.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Corn</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>50/Kg</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod0.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Eggs</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>72/dozen</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-radius-sm margin-8 width-20">
+                    <div class="position-relative">
+                        <img class="card-img-main border-radius-sm" src="../../assets/images/prod13.jpg" alt="food">
+                        <i
+                            class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
+
+                    </div>
+                    <div class="card-primary">
+                        <div class="card-subtitle para4">Oreo</div>
+                        <h2 class="card-title"><span class="text-muted">₹</span>20/Packet</h2>
+                    </div>
+                    <div class="card-action">
+                        <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> Add to cart
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
     </div>
-  
-   
-    <div class="d-flex-row menu-icons justify-content-around">
-        <a href="../login/login.html" class="align-self-center heading-3 btn">Logout</a>
-        <a href="../cart/cart.html" class="heading-3 margin-8 material-icons header-icon" >shopping_cart</a>
-        <a href="../wishlist/wishlist.html" class="heading-3 margin-8 material-icons header-icon" >favorite</a>
     </div>
-</div>
-  <!-- Navigation -->
-  <div class="nav">
-  <div class=" d-flex  text-primary border-color-gray w-100" id="navbar">
-    <ul class="ul-list component-list padding-none w-100">
-        <li class="margin-8 font-weight-bolder para3">Filter</li>
-        <li class="margin-8 font-weight-bolder para4">Price</li>
-        
-        <div class="w-100 d-flex justify-content-between align-items-center">
-            <div>10</div><div>200</div>
-         </div>
-        <input class="w-100 input range" type="range" min="10" max="500" value="200">
-
-            <li class="margin-8 font-weight-bolder para4">Category</li>
-            <li class="margin-8">
-                <input type="checkbox" name="category" class="input input-checkbox" value="Vegetables" id="vegetable">
-                <label for="vegetable">Vegetable</label>
-            </li>
-            <li class="margin-8">
-                <input type="checkbox" name="category" class="input input-checkbox" value="Fruits" id="fruits">
-                <label for="fruits">Fruits</label>
-            </li>
-            <li class="margin-8">
-                <input type="checkbox" name="category" class="input input-checkbox" value="Snacks" id="snacks">
-                <label for="snacks">Snacks</label>
-            </li>
-            <li class="margin-8 font-weight-bolder para4">Rating</li>
-            <li>
-                <input type="radio" name="rating" class="input input-checkbox" value="4" id="four">
-                <label for="four">4 Starts and Above</label>
-                <input type="radio" name="rating" class="input input-checkbox" value="3" id="three">
-                <label for="three">3 Starts and Above</label>
-                <input type="radio" name="rating" class="input input-checkbox" value="2" id="two">
-                <label for="two">2 Starts and Above</label>
-                <input type="radio" name="rating" class="input input-checkbox" value="1" id="one">
-                <label for="one">1 Starts and Above</label>
-            </li>
-            <li class="margin-8 font-weight-bolder para4">Sort By</li>
-            <li>
-                <input type="radio" name="category" class="input input-checkbox" value="Snacks" id="snacks">
-                <label for="snacks">Price - Low to High</label>
-                <input type="radio" name="category" class="input input-checkbox" value="Snacks" id="snacks">
-                <label for="snacks">Price - High to Low</label>
-
-            </li>
-    </ul>
-</div>
-</div>
-<div class="main">
-
-
-    <div class="comodities d-flex justify-content-center flex-wrap">
-
-                        <div class="card border-radius-sm margin-8 ">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm image-small width-20" src="../../assets/images/prod16.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Strawbery</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>100/250gm</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                                             <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod3.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Banana</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>50/Kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod4.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Carrot</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>30/kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod17.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Bringal</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>45/kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod5.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Tea</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>55/kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod6.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Sweet Lime</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>58/kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod14.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Onion</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>20/Kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod20.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Beetroot</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>20/Kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod18.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Doritos</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>30/Packet</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod15.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Dal</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>39/Kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod12.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Apple</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>150/Kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod19.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Corn</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>50/Kg</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod0.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite_border</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Eggs</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>72/dozen</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-                        <div class="card border-radius-sm margin-8 width-20">
-                            <div class="position-relative">
-                                <img class="card-img-main border-radius-sm" src="../../assets/images/prod13.jpg"alt="food">
-                                <i class="material-icons btn btn-icon  position-absolute card-icon-dismiss btn-danger-outline">favorite</i>
-                        
-                             </div>
-                             <div class="card-primary">
-                                    <div class="card-subtitle para4">Oreo</div>
-                                    <h2 class="card-title"><span class="text-muted">₹</span>20/Packet</h2>                 
-                                 </div>
-                             <div class="card-action">
-                                  <div class="btn border-radius-sm btn-primary w-100 margin-none text-align-center"> 				Add to cart
-                                </div>
-                             </div>
-                        </div>
-
-</div>
-
-
-
-    </div>
-
-
-</div></div>
-   <footer class="footer margin-top d-flex justify-content-around  align-items-center ">
-       <div class="d-flex-column">
+    <footer class="footer margin-top d-flex justify-content-around  align-items-center ">
+        <div class="d-flex-column">
             <div class="text-primary font-weight-bolder para3 padding-4">Info</div>
             <div class="text-primary para4 padding-4">Our Story</div>
             <div class="text-primary  para4 padding-4">Farmers Story</div>
             <div class="text-primary  para4 padding-4">Blogs</div>
-            
-       </div>
-       <div class="d-flex-column">
-        <div class="text-primary font-weight-bolder para3 padding-4">Support</div>
-        <div class="text-primary para4 padding-4">FAQ</div>
-        <div class="text-primary  para4 padding-4">Complaint</div>
-        <div class="text-primary  para4 padding-4">Refund and Return Policy</div>
-    </div>
-    <div class="d-flex-column">
-        <div class="d-flex-column">
-            <div class="text-primary font-weight-bolder para3 padding-4">Socials</div>
-            <div class="text-primary para4 padding-4">Twitter</div>
-            <div class="text-primary  para4 padding-4">Facebook</div>
-            <div class="text-primary  para4 padding-4">Instagram</div>
+
         </div>
-   </footer>
+        <div class="d-flex-column">
+            <div class="text-primary font-weight-bolder para3 padding-4">Support</div>
+            <div class="text-primary para4 padding-4">FAQ</div>
+            <div class="text-primary  para4 padding-4">Complaint</div>
+            <div class="text-primary  para4 padding-4">Refund and Return Policy</div>
+        </div>
+        <div class="d-flex-column">
+            <div class="d-flex-column">
+                <div class="text-primary font-weight-bolder para3 padding-4">Socials</div>
+                <div class="text-primary para4 padding-4">Twitter</div>
+                <div class="text-primary  para4 padding-4">Facebook</div>
+                <div class="text-primary  para4 padding-4">Instagram</div>
+            </div>
+    </footer>
 </body>
+
 </html>
